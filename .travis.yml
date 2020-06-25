@@ -9,6 +9,10 @@ script:
 git:
   depth: false
   quiet: true
+branches:
+  only:
+  - master
+  - /^90\./
 notifications:
   email:
     on_success: change
