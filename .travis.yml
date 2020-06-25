@@ -11,8 +11,6 @@ git:
   quiet: true
 notifications:
   email:
-    recipients:
-    - secure: "iMlOwVX7sfpalA50fnlDGHJbNFxqg5Zlrrx8ouPOBwwWtjHeL+F4faOvH++JcqIDgssQmChlBUSa9QdwGN3rdsEuU/qkUFo4Jp2Y7tj3mhLf8kF3fdPbA+JlCO+C+T+D1/XB8jv8NRvaMvwzTXYrUt1wzeEBmHS9zN9vsoubl9/X28L+iqaBNRqwc8wDkroNbuykrzEBeUewW1vn5/Y7TWoAyhke4j56L/HciJctiapXfziFuoeFgbJ6Y6mFa79hBB06loNOh2Rfvf1e0uqPdr0x9LGziLBGC0Ecio4avpDcGu5qDYmg5LMfJnEeDVE6/dEQXzrVmjF1/H6XzNJqPu81wWcPjN6ZEyLd4vemb4zPR2Yeb7/bPOU43kJw6krwnrJG0tYBylAPM5xpObU3GpkEpQMA+E1Y3j1NqZaSWHkV/o01jXlKci4OkgZmVlYRwJwINktpTY4KvW+YsLpGQFnSjRmprhJ+ZrcwVu6MMC8+rT66OWujrhszjt7rwJgVbamc8I6qx0lvovLCNKia5pYIKRwzXLbfXg2S1qiRQFJmPzCbk0KLN17wLHl80WO8qASKxzksKpGe9eOCgFHmv/d4AVt7CKCXhgs48k3z1IuAx8O/VY3rq1SwnOVSO3xebKyo6IGvw38ehZL1GaK+FvlRyATVB+XznzVV3TQBueE="
     on_success: change
     on_failure: always
   slack:
