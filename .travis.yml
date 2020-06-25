@@ -15,7 +15,7 @@ branches:
   - /^90\./
 notifications:
   email:
-    on_success: change
+    on_success: always
     on_failure: always
   slack:
     rooms:
