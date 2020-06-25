@@ -1,4 +1,11 @@
 dist: focal
+language: python
+python:
+- '3.8'
+script:
+- python -m pip install --upgrade pip
+- pip install pytest
+- pytest
 notifications:
   email:
     recipients:
@@ -10,10 +17,3 @@ notifications:
     - secure: "LvLLbpOke6KghXuaKdcb6qqOCryVM8gG1r1Aqs5vJbua5e2j8K2ZUAW0Nh1ROOoaibAjICZx5kndmPdlmeG8Y3R4ALy4tX6IF4HJkCnjyYF+BLWXIOOq0LNagiXhXjU89uX4hF5rDlTsv9DKHk1kbpG+5RoZu6BDqbsPVKLOh6YkMGJQPT7YAfbQ+sEIlcTLhDyI+rHTYWuV8wekMrcCY3Z0tR0YdqRq4AzF0WtIi4YT9csp4KglU6L41rSlbe4s1Fys13q72HHEccd1lp0iroZjBT12to0lWg9cJ8vA+HOZsHApwV9XLq561qrP4mqIczy16y+5MEcbRg+VPWKxTZV2CT6Yn2cBIgJHvPODC0Hm9XBtmzHZwYRg9y+1DSCL3PQb/tQMAYA+7RygVw1EUOLi2PW/KL8g9c/0tyiRy7WPw6l2WnSlBkoHftK9Jeaexf0gpzGD87f7UO1KZVE9MW9aenzkjlneFBOnFTTPbMwbta781xKRwj6Htw9/OUTPIY+njpK81xBqbaNZXaQT/+m+5m0Q4bqPztm1BB25agS268PgPOgwa/AjsZzqwwSpjlLVRNbvU6lWoYdqq6s8njDQ0L3BIo5bZJ1K8VKibY5dHxa/bxkbEsV1YvzEO4GyniwXizBWagXqW+y83Y06sqemgfnMEBOCoHd0SZKcmbo="
     on_success: change
     on_failure: always
-language: python
-python:
-- '3.8'
-script:
-- python -m pip install --upgrade pip
-- pip install pytest
-- pytest
