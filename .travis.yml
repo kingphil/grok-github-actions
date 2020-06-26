@@ -1,11 +1,25 @@
 dist: focal
-language: python
-python:
-- '3.8'
+language: minimal
+#language: python
+#python:
+#- '3.8'
+
+env:
+- EMACS_VERSION: 26.3
+
+# Our tests are run with Emacs in Docker
+services:
+- docker
+
+before_install:
+- docker pull flycheck/emacs-cask:$EMACS_VERSION
+
 script:
-- python -m pip install --upgrade pip
-- pip install pytest
-- pytest
+- emacs -Q -batch -l eieio-etudes.el -f ert-run-tests-batch-and-exit
+#- python -m pip install --upgrade pip
+#- pip install pytest
+#- pytest
+
 git:
   depth: false
   quiet: true
